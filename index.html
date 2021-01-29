@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информационный центр</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet prefetch"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./date/datepicker.min.css" type="text/css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script defer src="date/datepicker.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <!---Красивая красота-->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <!--Форма-->
+    <div class="popup">
+        <form class="formAddStudent">
+            <h2>Добавьте студента</h2>
+            <div class="inputBox">
+                <span class="check">
+                    <i class="fa fa-check-circle-o"></i>
+                </span>
+                <input class="formInput" type="text" name="username" placeholder="Иванов Иван Иванович" required>
+                <span class="lbl">ФИО</span>
+                <div class="errors"></div>
+
+            </div>
+            <div class="inputBox daters">
+                <span class="check check-date">
+                    <i class="fa fa-check-circle-o"></i>
+                </span>
+                <input type="text" class="datepicker-here formInput" name="birthday" data-position="left bottom"
+                    data-minDate="01.01.1900" maxlength="10" placeholder="дд.мм.гггг" required>
+                <span class="lbl lbl-birthday">День рождения</span>
+                <div class="errors"></div>
+            </div>
+            <div class="inputBox">
+                <span class="check">
+                    <i class="fa fa-check-circle-o"></i>
+                </span>
+                <input class="formInput" type="text" maxlength="4" placeholder="2000" name="startDate" required>
+                <span class="lbl">Начало обучения</span>
+                <div class="errors "></div>
+
+            </div>
+            <div class="inputBox">
+                <span class="check">
+                    <i class="fa fa-check-circle-o"></i>
+                </span>
+                <input class="formInput" type="text" name="faculty" placeholder="Аэрокосмический" required>
+                <span class="lbl">Факультет</span>
+                <div class="errors"></div>
+
+            </div>
+            <button type="submit" class="btnForm">
+                Добавить
+            </button>
+        </form>
+        <span class="close">
+            <i class="fa fa-close fa-2x"></i>
+        </span>
+    </div>
+    <!--Таблица-->
+    <div class="mainContent">
+        <h1>Добро пожаловать в информационный центр</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="#" class="sortBy" name="id">id</a></th>
+                    <th><a href="#" class="sortBy" name="name">ФИО</a></th>
+                    <th><a href="#" class="sortBy" name="age">День Рождения (Возраст)</a></th>
+                    <th><a href="#" class="sortBy" name="course">Годы обучения</a></th>
+                    <th><a href="#" class="sortBy" name="faculty">Факультет</a></th>
+                </tr>
+            </thead>
+            <tbody class="tbl">
+            </tbody>
+        </table>
+        <div class="buttons">
+            <div class="btncombo">
+                <select class="js-example-basic-single selectItems" name="state">
+                    <option class="selectedValue" value="surname" selected>Фамилия:</option>
+                    <option class="selectedValue" value="age">Возраст:</option>
+                    <option class="selectedValue" value="course">Курс:</option>
+                    <option class="selectedValue" value="faculty">Факультет:</option>
+                </select>
+                <input class="btnResearch" type="text">
+            </div>
+            <button class="btn">
+                Добавить студента!
+            </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
