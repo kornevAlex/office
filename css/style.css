@@ -378,7 +378,7 @@ td:first-child {
 }
 
 .btnResearch:hover {
-  background: #24C6DC url('../../img/researchWhite.png') center/30px 30px no-repeat;
+  background: #24C6DC url('../img/researchWhite.png') center/30px 30px no-repeat;
 }
 
 .research {
@@ -386,7 +386,7 @@ td:first-child {
 }
 
 .btnResearch {
-  background: #32a1c9 url('../../img/researchWhite.png') center/25px 25px no-repeat;
+  background: #32a1c9 url('../img/researchWhite.png') center/25px 25px no-repeat;
   width: 40px;
   height: 40px;
   border: solid 1px #ccc;
@@ -400,7 +400,7 @@ td:first-child {
 .btnResearch:focus {
   padding-left: 20px;
   width: 510px;
-  background: #fff url('../../img/research.png') 95%/30px 30px no-repeat;
+  background: #fff url('../img/research.png') 95%/30px 30px no-repeat;
   border: 0;
   border-left: 1px solid black;
   border-radius: 0 50px 50px 0;

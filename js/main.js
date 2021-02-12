@@ -504,7 +504,6 @@ document.addEventListener('DOMContentLoaded', () => {
         selectItems.style.zIndex = 999
         btnResearch.placeholder = onValueForPlaceholder()
     }
-
     selectItems.addEventListener('focus', () => {
         selectItems.style.opacity = 1
         selectItems.style.zIndex = 999
@@ -520,8 +519,10 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(state.students)
     })
     selectItems.addEventListener('blur', () => {
+        selectItems.nextElementSibling.placeholder = ''
         selectItems.style.opacity = 0
         selectItems.style.zIndex = -999
+        
     })
     selectItems.addEventListener('click', () => {
         btnResearch.placeholder = onValueForPlaceholder()
